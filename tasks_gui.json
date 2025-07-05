@@ -1,0 +1,32 @@
+[
+    {
+        "title": "getup",
+        "done": true,
+        "priority": "High"
+    },
+    {
+        "title": "gym",
+        "done": false,
+        "priority": "Medium"
+    },
+    {
+        "title": "food",
+        "done": true,
+        "priority": "High"
+    },
+    {
+        "title": "game",
+        "done": false,
+        "priority": "Low"
+    },
+    {
+        "title": "sleep",
+        "done": false,
+        "priority": "High"
+    },
+    {
+        "title": "shopping",
+        "done": true,
+        "priority": "Low"
+    }
+]
