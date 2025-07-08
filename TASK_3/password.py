@@ -10,7 +10,7 @@ def myfun():
 def get_password_length():
     while True:
         try:
-            length = int(input(" ENTER THE LENGTH OF PASSWORD (min 6): "))
+            length= int(input(" ENTER THE LENGTH OF PASSWORD (min 6): "))
             if length < 6:
                 print("⚠️  Password should be at least 4 characters long.")
                 continue
@@ -25,7 +25,7 @@ def choice():
     print("3 - Strong (letters, numbers, symbols)")
 
     while True:
-        choice = input(" YOUR CHOICE (1/2/3): ").strip()
+        choice= input(" YOUR CHOICE (1/2/3): ").strip()
         if choice in ['1', '2', '3']:
             return int(choice)
         print("❌ Invalid choice. Please select 1, 2, or 3.")
@@ -33,9 +33,9 @@ def choice():
  #Password character setting
 def Function_pass(choice):
     x = string.ascii_letters
-    if choice == 1:
+    if choice== 1:
         return x
-    elif choice == 2:
+    elif choice== 2:
         return x + string.digits
     elif choice == 3:
         return x + string.digits + string.punctuation
@@ -56,10 +56,10 @@ def pass_show(password):
 
 def main():
     myfun()
-    length = get_password_length()
-    ch = choice()
-    c = Function_pass(ch)
-    password = generating_p(length, c)
+    length=get_password_length()
+    ch=choice()
+    c =Function_pass(ch)
+    password=generating_p(length, c)
     pass_show(password)
 
 if __name__ == "__main__":
